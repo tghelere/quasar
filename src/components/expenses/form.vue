@@ -18,7 +18,6 @@
         submit () {
           const cloned = JSON.parse(JSON.stringify(this.expense))
           cloned.id = Utils.uid()
-          this.$store.commit('ADD_EXPENSE', cloned)
           this.reset()
         },
         reset () {
